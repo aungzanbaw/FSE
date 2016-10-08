@@ -1,0 +1,21 @@
+HTML/ Linux CLI
+
+client(logic) -> JSON -> Server (API) -> database
+
+JSON
+
+Node/ES6 import/export
+
+TCP/IP server
+
+Web server
+https / http - basic web staff html
+
+Chat server
+socket - real time
+
+File server - I/O read/write
+
+SQLite Database
+
+npm package management

@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Vanilla</title>
+  </head>
+  <body>
+    <h1 id="boom">Hello it's me</h1>
+    <script type="text/javascript">
+    let s = document.getElementById('boom').style
+    s.opacity = 1;
+    (function fade(){
+      (s.opacity-=.1)<0 ? s.display="none" : setTimeout(fade,40)
+    })()
+    </script>
+  </body>
+</html>

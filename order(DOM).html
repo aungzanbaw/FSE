@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <script type="text/javascript">
+
+    document.addEventListener("DOMContentLoaded", function () {
+      console.log('DOM load event')
+    });
+
+    // some browser prefer window.onload
+    function load() {
+        console.log("Window loaded");
+      }
+    window.onload = load;
+    // modern JS
+    //
+    // (function() {
+    //   console.log('never underestimate the power of IIFE')
+    // })()
+    // IE 8 and older
+    // document.attachEvent("onreadystatechange", function(){
+    //   if (document.readyState === "complete"){
+    //     document.detachEvent( "onreadystatechange", arguments.callee );
+    //     console.log('IEs Jesus!')
+    //   }
+    // });
+    </script>
+  </body>
+</html>

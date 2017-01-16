@@ -15,6 +15,6 @@ let exchanges = [
 
 exchanges.forEach(function(exchange) {
   exchange.forEach(function(stock) {
-    console.log(JSON.stringify(stock))
+    console.log(stock)
   })
 })

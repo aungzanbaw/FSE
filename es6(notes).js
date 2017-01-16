@@ -1,4 +1,16 @@
-"use strict"
+//"use strict"
+//var let const
+//arrow func
+//default parameters
+//template string
+// rest and spread
+// object enhancements
+// classes
+// es6 modules
+// promise
+// array (find, includes)
+// generator (yield)
+
 
 // window.window == window
 // global.global == global

@@ -1,5 +1,5 @@
-Coding in browser we have DOM API
-//jQuery said "Thou Shalt Find Nodes By Using CSS Selectors"
+// In browser we have DOM API
+// jQuery said "Thou Shalt Find Nodes By Using CSS Selectors"
 
 // Old:
 getElementsById()

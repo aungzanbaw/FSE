@@ -1,22 +1,4 @@
-//"use strict"
-//var let const
-//arrow func
-//default parameters
-//template string
-// rest and spread
-// object enhancements
-// classes
-// es6 modules
-// promise
-// array (find, includes)
-// generator (yield)
-
-
-// window.window == window
-// global.global == global
-
 // in strict mode following things are true
-
 // No duplicate properties nor params in obj
 let obj = {
   name: "azb",

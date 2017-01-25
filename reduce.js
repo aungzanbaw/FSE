@@ -1,11 +1,22 @@
-let arr = [1,2,3,4,5,6,7]
+'use strcit'
 
-let result = arr.reduce((a,b) => {
-  return a + b
+let orders = [
+  {amount: 120},
+  {amount: 20},
+  {amount: 80},
+  {amount: 302}
+]
+
+let sum = orders.reduce((sum, order) => sum += order.amount ,0)
+
+let sum = orders.reduce(function(sum, order){
+  console.log('hello', sum, order) // just to show you what's going on here
+  return sum += order.amount
 },0)
 
-let result = arr.reduce((a,b) => {
-  return (a|0) + b
-})
+let sum = 0
+for (var i = 0; i < orders.length; i++) {
+  sum += orders[i].amount
+}
 
-console.log(result) // same result 28
+console.log(sum)

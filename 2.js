@@ -11,8 +11,8 @@ global.four = function(){
   console.log("four")
 }
 
-exports.five = "five"
 
+exports.five = "five"
 exports.six = function () {
   console.log("six")
 }

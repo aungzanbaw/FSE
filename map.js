@@ -10,8 +10,8 @@ let animals = [
   {name: 'AAA', type: 'rabbit'}
 ]
 
-let names = animals.map(a => a.name )
-
+// let names = animals.map(a => a.name )
+//
 // let names = animals.map(function(animal){
 //   return animal.name
 // })
@@ -20,5 +20,5 @@ let names = animals.map(a => a.name )
 // for (var i = 0; i < animals.length; i++) {
 //   names.push(animals[i].name)
 // }
-
-console.log(names)
+//
+// console.log(names) 

@@ -3,9 +3,10 @@
 
 // Old:
 getElementsById()
+getElementsByClassName()
+
 getElementsByTagName()
 getElementsByName()
-getElementsByClassName()
 querySelector()
 querySelectorAll()
 document.links

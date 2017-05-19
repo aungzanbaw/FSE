@@ -6,9 +6,12 @@ let http = require('http'),
 function route(req, res) {
   // console.log(req.url)
   // console.log(req.method)
-  // console.log(req.headers)
-  // console.log(req.headers.cookie);
-  res.writeHead(200,{'Content-type':'text/html'})
+  console.log(req.headers)
+  // console.log(req.headers.cookies);
+  res.writeHead(200,{
+    'Content-type': 'text/plain',
+    'Set-cookie': 'mycookie=dyuAHJ7632TYUAGA'
+  })
   res.end('<h1>Hello World</h1>')
 }
 

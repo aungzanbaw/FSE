@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Stack</title>
+  </head>
+  <body>
+    <h1>Hello Stack</h1>
+    <script type="text/javascript">
+      'use strict'
+      console.log('hello');
+      debugger;
+      function first(x) {
+        return second(x * 2)
+      }
+
+      function second(x) {
+        return third(x + 12)
+      }
+
+      function third(x) {
+        return x * 3
+      }
+
+      let result = first(3)
+      console.log(result)
+    </script>
+  </body>
+</html>

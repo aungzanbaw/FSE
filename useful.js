@@ -13,6 +13,9 @@
 "hello world".startWith("hello") // es6, second params is starting index
 "hello world".endWith("world") // es6, second params is starting index
 "hello world".repeat(2) // es6
+"hello world".match(/\s/) // find space with RegExp
+"hello world".replace(/(\w+)\s(\w+)/, '$2 $1') // replace string flip-flop with RegExp
+"hello world".search(/\s/) // find space with RegExp
 
 // NUMBER
 3.141592653589793.toExponential(3)  // convert to exponential form
@@ -29,8 +32,8 @@ Date.parse("June 19,2010")   // unix epoch
 [1,2,3,4].join(' ')  // single character to join as string
 "thou shall not the might space".split(" ").join("_")
 [1,2,3,4].pop()  // remove last item
-[1,2,3,4].shift() // remove first item
 ["Beta","Gamma"].push("Delta")  // adds an item to the end
+[1,2,3,4].shift() // remove first item
 ["Beta","Gamma","Delta"].unshift("Alpha") // adds an item to the first
 [1,2,3,4].reverse() // flip flop
 [1,2,3,4,5,6,7,8,9].slice(1,2) // can start from zero, sec is optional
@@ -48,10 +51,17 @@ Date.parse("June 19,2010")   // unix epoch
 [2,4,6,8,10].includes(8)  // es7 EPIC ! return true or false
 [2,4,6,8,10].find(callback) // kinda like map or filter
 [2,4,6,8,10].findIndex(callback) // return first index that match your condition
-[].fill()
-[].keys()
-[].values()
-[].entries()
+['angel', 'clown', 'mandarin', 'sturgeon'].splice(0,1) // start, delete count
+[1,2,3,4,5].fill(0) // fill all the elements with static 0
+
+let keys = [1,2,3,4,5].keys() // get new Array Iterator contain keys
+keys.next() // { value: 0, done: false }
+
+let values = [1,2,3,4,5].values() // get new Array Iterator contain values
+values.next().value; // 1
+
+let number = ["uno","dos","tres","las cuatro","cinco"].entries()
+number.next().value; // [0, "uno"]
 
 // Math
 Math.min(53,23,5,43,5)

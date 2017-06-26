@@ -1,5 +1,8 @@
 # FSE
-<a href="://fairway.com.mm/">Fairway Technology</a> (school)
+<a href="://fairway.com.mm/">Fairway Technology</a> (school of technology)
 ဆော့ဗ်ဝဲအင်ဂျင်နီယာကျောင်းသားများအတွက်
 
-JS PROGRAMMING ရေးထုံးများဖြစ်သော PROMISE, PROTOTYPE & ES6 စသည့်အကြောင်းအရာများ ပါဝင်သည်။
+JavaScript ရေးထုံးအသစ်များဖြစ်သော Promise, Async & ES6 အကြောင်းအရာများ ပါဝင်သည်။
+
+
+

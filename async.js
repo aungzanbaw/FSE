@@ -10,7 +10,7 @@ function odd(array, callback) {
 
 console.log("Before")
 odd(arr,function(error, data) {
-  if (error) throw error
+  // if (error) throw error
   console.log(data)
 })
 console.log("After")

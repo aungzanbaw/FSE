@@ -20,7 +20,6 @@ let oldLog = gLogNumber;
 
 setupSomeGlobals();
 gLogNumber(); // 42
-
 oldLog() // 5
 
 // call setupSomeGlobals() again, then a new closure (stack-frame!) is created. The old gLogNumber, gIncreaseNumber, gSetNumber variables are overwritten with new functions that have the new closure. (In JavaScript, whenever you declare a function inside another function, the inside function(s) is/are recreated again each time the outside function is called.)

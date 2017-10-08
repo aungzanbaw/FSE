@@ -28,3 +28,11 @@ http.createServer(function (req, res) {
     console.log(mimeType);
   }
 }).listen(3000)
+
+// stats.isFile()
+// stats.isDirectory()
+// stats.isBlockDevice()
+// stats.isCharacterDevice()
+// stats.isSymbolicLink() (only valid with fs.lstat())
+// stats.isFIFO()
+// stats.isSocket()

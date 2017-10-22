@@ -1,4 +1,4 @@
-console.log("Array Cardio 💪")
+// console.log("Array Cardio 💪")
 
 const inventors = [
   { first: 'Albert', last: 'Einstein', year: 1879, passed: 1955 },
@@ -34,8 +34,10 @@ const people = ['Beck, Glenn', 'Becker, Carl', 'Beckett, Samuel', 'Beddoes, Mick
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
 // https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
 
+
 // 7. sort Exercise
 // Sort the people alphabetically by last name
+
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these

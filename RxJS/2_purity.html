@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rx</title>
+</head>
+<body>
+    <button>Click Me!</button>
+    <script src="rx.js"></script>
+    <script>
+        // vanilla
+        let btn = document.querySelector('button');
+        btn.addEventListener('click', e => console.log(e));
+
+        // Rx
+        let btn = document.querySelector('button');
+        Rx.Observable.fromEvent(btn, 'click')
+            .subscribe(e => console.log(e));
+    </script>
+</body>
+</html>

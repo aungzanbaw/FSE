@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rx</title>
+</head>
+<body>
+    <button>Click Me!</button>
+    <script src="rx.js"></script>
+    <script>
+        // vanilla
+        let count = 0,
+            rate = 1000,
+            lastClick = Date.now() - rate,
+            button = document.querySelector('button');
+        button.addEventListener('click', () => {
+            if (Date.now() - lastClick >= rate) {
+                console.log(`Clicked ${++count} times`);
+                lastClick = Date.now();
+            }
+        });
+
+        // Rx
+        let button = document.querySelector('button');
+        Rx.Observable.fromEvent(button, 'click')
+            .throttleTime(1000)
+            .scan(count => count + 1, 0)
+            .subscribe(count => console.log(`Clicked ${count} times`));
+    </script>
+</body>
+</html>

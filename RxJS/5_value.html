@@ -24,7 +24,7 @@
         });
 
         // Rx
-        var button = document.querySelector('button');
+        let button = document.querySelector('button');
         Rx.Observable.fromEvent(button, 'click')
             .throttleTime(1000)
             .map(event => event.clientX)

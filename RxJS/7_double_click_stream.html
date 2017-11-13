@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rx</title>
+</head>
+<body>
+    <button>Click Me!</button>
+    <h1></h1>
+    <script src="rx.js"></script>
+    <script>  
+        let btn = document.querySelector('button'),
+            label = document.querySelector('h1'),
+            clickStream = Rx.Observable.fromEvent(btn, 'click');
+            
+        let doubleClickStream = clickStream
+            // .buffer(() => clickStream.throttle(250))
+            .bufferWhen(() => clickStream.debounceTime(250))
+            .map(arr => arr.length)
+            .filter(len => len === 2);
+          
+        doubleClickStream.subscribe(event => {
+            label.textContent = 'double click';
+        });
+          
+        doubleClickStream
+            .delay(1000)
+            .subscribe(suggestion => {
+              label.textContent = '-';
+            }); 
+    </script>
+</body>
+</html>

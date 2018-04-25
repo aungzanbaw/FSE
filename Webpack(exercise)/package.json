@@ -1,0 +1,25 @@
+{
+  "name": "webpack-exercise",
+  "version": "1.0.0",
+  "description": "simple webpack 4 example for FSE students",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "node",
+    "es6"
+  ],
+  "author": "azb",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.3.2",
+    "react-dom": "^16.3.2"
+  },
+  "devDependencies": {
+    "webpack": "^4.6.0",
+    "webpack-cli": "^2.0.15",
+    "webpack-dev-server": "^3.1.3"
+  }
+}

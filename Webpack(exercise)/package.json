@@ -1,10 +1,11 @@
 {
   "name": "webpack-exercise",
   "version": "1.0.0",
-  "description": "simple webpack 4 example for FSE students",
+  "description": "Simple webpack 4 example for FSE students",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --mode development --hot --open",
+    "build": "webpack --mode production"
   },
   "keywords": [
     "webpack",

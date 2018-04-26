@@ -1,6 +1,6 @@
 'use strict'
 
-let x=10, y=20, z=30
+let x = 10, y = 20, z = 30
 
 function findMax(array) {
   return Math.max.apply(null, array)

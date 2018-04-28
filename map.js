@@ -9,7 +9,7 @@ const animals = [
   {name: 'DDD', type: 'dog'},
   {name: 'AAA', type: 'rabbit'}
 ]
-// combine with arrow fun
+
 const names = animals.map(a => a.name )
 
 const names = animals.map(function(animal){

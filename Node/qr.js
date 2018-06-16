@@ -1,4 +1,5 @@
 'use strict'
+
 const qr = require("qr-image")
 const fs = require("fs")
 

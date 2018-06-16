@@ -20,8 +20,14 @@
 // NUMBER
 3.141592653589793.toExponential(3)  // convert to exponential form
 3.141592653589793.toFixed(3)  // show fix number
-parseInt("123.456", 10)  // always return whole number, sec param 10 -> decimal, 2 -> binary, 8 -> octal
-parseFloat("123.456")
+Number.parseInt("123.456", 10)  // always return whole number, sec param 10 -> decimal, 2 -> binary, 8 -> octal
+Number.parseFloat("123.456")
+0xFF // Hexa in number (int)
+0b11 // Binary in number (int)
+0o10 // Octal in number (int)
+Number.isInteger()
+Number.NaN()
+Number.isFinite()
 
 // DATE
 get____ // getDate, getDay, getFullYear,...
@@ -75,5 +81,22 @@ Math.floor(Math.random() * 10)   // 0-9
 function getRandomNumberInRange(min,max){
     return Math.floor(Math.random() * (max - min + 1))
 }
-
 Math.pow(3,3) // number, power (2,-1)
+
+// OBJECT
+// 1. Dirty way to check obj equality work without METHODS and DOM NODES
+a = {name: 'kyaw', age: 34}
+JSON.stringify(a) === JSON.stringify(a)  
+
+// 2. Reference the same obj
+a = {}
+Object.is(a, a)
+Object.is(a, {})
+
+// 3. Lodash 
+_.isEqual(bobaFett, jangoFett)
+
+/*
+* https://stackoverflow.com/questions/201183/how-to-determine-equality-for-two-javascript-objects 
+* https://stackoverflow.com/questions/1068834/object-comparison-in-javascript
+*/

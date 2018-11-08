@@ -10,8 +10,8 @@
 "hola".toUpperCase()
 "BPPLE".toLowerCase()
 "hello world".includes("hello") // es6
-"hello world".startWith("hello") // es6, second params is starting index
-"hello world".endWith("world") // es6, second params is starting index
+"hello world".startsWith("hello") // es6, second params is starting index
+"hello world".endsWith("world") // es6, second params is starting index
 "hello world".repeat(2) // es6
 "hello world".match(/\s/) // find space with RegExp
 "hello world".replace(/(\w+)\s(\w+)/, '$2 $1') // replace string flip-flop with RegExp
@@ -26,8 +26,10 @@ Number.parseFloat("123.456")
 0b11 // Binary in number (int)
 0o10 // Octal in number (int)
 Number.isInteger()
-Number.NaN()
+Number.isNaN()
 Number.isFinite()
+1e4 // 10000
+1e2 // 100
 
 // DATE
 get____ // getDate, getDay, getFullYear,...

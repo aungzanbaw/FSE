@@ -15,7 +15,7 @@ marks.forEach(function(mark){
     console.log(mark)
 })
 
-for (var i = 0; i < marks.length; i++) {
+for (let i = 0; i < marks.length; i++) {
     console.log(marks[i])
 }
 

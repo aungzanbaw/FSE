@@ -4,5 +4,10 @@ var Emoji = /** @class */ (function () {
     }
     return Emoji;
 }());
-var unicorn = new Emoji('🦄');
-console.log(unicorn);
+var unicorn = new Emoji("🦄");
+unicorn.icon = "💩";
+console.log(unicorn); // check the precomiple version on class.js
+// if you want to use typescript via cli do following
+// npm install typescript -g
+// tsc class.ts
+// node class.js

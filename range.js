@@ -2,6 +2,7 @@
 // for x in range(10):  
   // print(x*x)
 
+// For numbers
 [...Array(256).keys()] 
 
 // [
@@ -16,3 +17,23 @@
 //   96, 97, 98, 99,
 //   ... 156 more items
 // ]
+
+
+// For iteration 
+for (const x of Array(5).keys()) {
+  console.log(x, String.fromCharCode('A'.charCodeAt(0) + x));
+}
+// "ABCD"
+
+// lodash lib has _.range() 
+
+import _ from 'loadash' 
+// it might not work right now, but future browser will do 'loadash' is module name
+// https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/import
+
+// For Numbers 
+_.range(10)
+
+// For iteration 
+String.fromCharCode(..._.range('A'.charCodeAt(0), 'D'.charCodeAt(0) + 1)) 
+// "ABCD"
